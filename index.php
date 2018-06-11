@@ -12,7 +12,7 @@ $host = '122.3.33.110';
 if($socket =@ fsockopen($host, 3080, $errno, $errstr, 30)) {
 fclose($socket);
 ?>
-<iframe src="http://122.3.33.110:3080"></iframe>
+<iframe src="http://122.3.33.110:3080" style="width: 100%; height: 100%"></iframe>
 <?php
 
 } else {
