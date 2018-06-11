@@ -1,9 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WAH SQL FILE UPLOADER</title>
+</head>
+<body>
+
+</body>
+</html>
 <?php
-$host = 'sql.wah.ph';
-if($socket =@ fsockopen($host, 80, $errno, $errstr, 30)) {
-echo 'online!';
+$host = '122.3.33.110';
+if($socket =@ fsockopen($host, 3080, $errno, $errstr, 30)) {
 fclose($socket);
+?>
+<iframe src="122.3.33.110:3080"></iframe>
+<?php
+
 } else {
-echo 'offline.';
+echo 'Site is not available at the moment. Please try again later or contact our system administratos at wah.pilipinas@gmail.com';
 }
 ?>
